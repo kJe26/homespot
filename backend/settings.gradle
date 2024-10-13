@@ -1,0 +1,3 @@
+rootProject.name = 'mnim2165-idde'
+include 'mnim2165-spring'
+

@@ -1,0 +1,23 @@
+allprojects {
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply from: "$rootDir/lint.gradle"
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.9'
+        // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+        runtimeOnly group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.14'
+    }
+}
+
