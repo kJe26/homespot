@@ -1,1 +1,0 @@
-# Single-page webalkalmazások laborfeladatok
